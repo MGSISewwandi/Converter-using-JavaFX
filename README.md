@@ -1,0 +1,2 @@
+# Converter-using-JavaFX
+I developed a converter which consisting of a single textfield with six buttons: meter, kilometer, volume,  INR (Indian Rupees), and Celsius (oC). When the meter button is hit after the user enters a number, the  entered value translates to meters. The Celsius procedure assumes that the values entered by the user  are in degrees Fahrenheit (oF). Also, if the user types something other than numbers, the message  “Please enter a number” appears 
