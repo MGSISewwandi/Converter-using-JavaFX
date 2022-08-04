@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane fx:id="pane" prefHeight="592.0" prefWidth="382.0" style="-fx-border-color: #000000; -fx-border-width: 5; -fx-background-image: url(&quot;/sample/c.jpg&quot;); -fx-background-size: 382,590;">
+         <children>
+            <Button fx:id="btn1" defaultButton="true" layoutX="28.0" layoutY="264.0" mnemonicParsing="false" onAction="#Meter" prefHeight="60.0" prefWidth="150.0" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%,#4fdfff,#ffffff); -fx-background-radius: 10,10,20,20;" text="m">
+               <font>
+                  <Font name="Arial Black" size="30.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn6" layoutX="28.0" layoutY="503.0" mnemonicParsing="false" onAction="#Celsius" prefHeight="60.0" prefWidth="150.0" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%,#4fdfff,#ffffff); -fx-background-radius: 10,10,20,20;" text="°C">
+               <font>
+                  <Font name="Arial Black" size="30.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn5" layoutX="87.0" layoutY="426.0" mnemonicParsing="false" onAction="#Inr" prefHeight="60.0" prefWidth="218.0" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%,#4fdfff,#ffffff); -fx-background-radius: 10,10,20,20;" text="IndianRupees">
+               <font>
+                  <Font name="Arial Black" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn4" layoutX="87.0" layoutY="348.0" mnemonicParsing="false" onAction="#Volume" prefHeight="65.0" prefWidth="218.0" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%,#4fdfff,#ffffff); -fx-background-radius: 10,10,20,20;" text="Volume(m³)">
+               <font>
+                  <Font name="Arial Black" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn2" layoutX="213.0" layoutY="264.0" mnemonicParsing="false" onAction="#Km" prefHeight="60.0" prefWidth="150.0" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%,#4fdfff,#ffffff); -fx-background-radius: 10,10,20,20;" text="Km">
+               <font>
+                  <Font name="Arial Black" size="30.0" />
+               </font>
+            </Button>
+            <TextField fx:id="tf1" alignment="CENTER_RIGHT" layoutX="22.0" layoutY="86.0" prefHeight="65.0" prefWidth="338.0" promptText="Enter Value" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%,#4fdfff,#ffffff); -fx-background-radius: 10,10,20,20; -fx-background-size: 580,54;">
+               <font>
+                  <Font name="Times New Roman" size="24.0" />
+               </font>
+            </TextField>
+            <Text layoutX="28.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Convert To," wrappingWidth="227.20004882812498">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+               <fill>
+                  <LinearGradient endX="0.7786259833182998" endY="0.5496183360805948">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="1.0" green="0.014814814552664757" blue="0.014814814552664757" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.007680491551459294">
+                           <color>
+                              <Color red="1.0" green="0.014814814552664757" blue="0.014814814552664757" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.9894737005233765" green="0.9894737005233765" blue="0.9894737005233765" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Text>
+            <Label layoutX="8.0" prefHeight="36.0" prefWidth="266.0" text=" Converter">
+               <font>
+                  <Font name="Times New Roman Bold" size="28.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.5266666836208768" centerY="0.5305343402251032" radius="0.5">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.9280864000320435" green="1.0" blue="0.13703703880310059" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.9100000262260437" green="0.1273999959230423" blue="0.1273999959230423" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Label>
+            <Button fx:id="btnClear" layoutX="281.0" layoutY="180.0" mnemonicParsing="false" onAction="#actionPerformed" prefHeight="40.0" prefWidth="78.0" style="-fx-background-color: linear-gradient(to bottom right, #e40101,#ffffff); -fx-background-radius: 15,15,25,25; -fx-border-color: linear-gradient(to bottom right,#ffffff,#e40101); -fx-border-radius: 15,15,25,25; -fx-border-width: 3;" text="Clear" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="maxbtn" layoutX="323.0" layoutY="5.0" mnemonicParsing="false" onAction="#handleMaxButtonAction" prefHeight="26.0" prefWidth="26.0" style="-fx-background-image: url(&quot;/sample/max.jpg&quot;); -fx-background-size: 26,26;" />
+            <Button fx:id="btnClose" layoutX="350.0" layoutY="5.0" mnemonicParsing="false" onAction="#handleCloseButtonAction" prefHeight="26.0" prefWidth="26.0" style="-fx-background-image: url(&quot;/sample/close.png&quot;); -fx-background-size: 26,26;" />
+            <Button fx:id="minbtn" layoutX="296.0" layoutY="5.0" mnemonicParsing="false" onAction="#handleMinButtonAction" prefHeight="26.0" prefWidth="26.0" style="-fx-background-image: url(&quot;/sample/min.jpg&quot;); -fx-background-size: 26,26;" />
+            <Button fx:id="btn7" layoutX="199.0" layoutY="503.0" mnemonicParsing="false" onAction="#Fahrenheit" prefHeight="60.0" prefWidth="150.0" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%,#4fdfff,#ffffff); -fx-background-radius: 10,10,20,20;" text="°F">
+               <font>
+                  <Font name="Arial Black" size="30.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
